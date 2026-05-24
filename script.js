@@ -1,16 +1,111 @@
 // ==============================
-// DAFTAR IPHONE
+// DAFTAR MOTOR
 // ==============================
 const motors = [
-  {
-    name: "Iphone 11 Second Ibox",
-    price: "Rp6.300.000",
-    img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
+      {
+    name: "BYD Atto 1 (Dynamic)",
+    price: "205.000.000",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2025/07/Atto-1-Apricity-White-.png",
     category: "matic",
-    new: false,
-    link: "iphone11/"
+    new: true,
+    link: "byd-atto1-dynamic/"
   },
-  
+  {
+    name: "BYD Atto 1 (Premium)",
+    price: "Rp241.000.000",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2025/07/Atto-1-Sprout-Green-1.png",
+    category: "matic",
+    new: true,
+    link: "byd-atto-1premium/"
+  },
+  {
+    name: "BYD Dolphin (Dynamic)",
+    price: "Rp375.000.000",
+    img: "https://i.ibb.co.com/Z6hNhZn5/184762.webp",
+    category: "matic",
+    new: true,
+    link: "byd-dolphin-dynamic/"
+  },
+  {
+    name: "BYD Dolphin (Premium)",
+    price: "Rp439.000.000",
+    img: "https://i.ibb.co.com/7NzfWBYB/184758.webp",
+    category: "matic",
+    new: true,
+    link: "byd-dolphin-premium/"
+  },
+  {
+    name: "BYD M6 (Standard)",
+    price: "Rp393.000.000",
+    img: "https://i.ibb.co.com/C5yJkpst/ezgif-24b295284166dc77.webp",
+    category: "matic",
+    new: true,
+    link: "byd-m6-standard/"
+  },
+  {
+    name: "BYD M6 (Superior)",
+    price: "Rp433.000.000",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/12/Blue.png",
+    category: "matic",
+    new: true,
+    link: "byd-m6-superior/"
+  },
+  {
+    name: "BYD Atto 3 (Advanced)",
+    price: "Rp396.000.000",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/09/Sky-White-1.png",
+    category: "matic",
+    new: true,
+    link: "byd-atto3-advanced/"
+  },
+  {
+    name: "BYD Atto 3 (Superior)",
+    price: "Rp535.000.000",
+    img: "https://i.ibb.co.com/23pz1wr1/ezgif-22684ff4a5d743d7.webp",
+    category: "matic",
+    new: true,
+    link: "byd-atto3-superior/"
+  },
+  {
+    name: "BYD Sealion 7 (Premium)",
+    price: "Rp641.000.000",
+    img: "https://i.ibb.co.com/S4pZJT7h/ezgif-29ad500ffecbdd0a.webp",
+    category: "matic",
+    new: true,
+    link: "byd-sealion7-premium/"
+  },
+  {
+    name: "BYD Sealion 7 (Performance)",
+    price: "Rp731.000.000",
+    img: "https://i.ibb.co.com/kVG7pqk4/ezgif-1d5d30e6b9a831eb.webp",
+    category: "matic",
+    new: true,
+    link: "byd-sealion7-performance/"
+  },
+  {
+    name: "BYD Seal (Premium)",
+    price: "Rp655.000.000",
+    img: "https://www.byd.com/material/byd-site/id/pricelist/seal-fix.png",
+    category: "matic",
+    new: true,
+    link: "byd-seal-premium/"
+  },
+  {
+    name: "BYD Seal (Performance)",
+    price: "Rp766.000.000",
+    img: "https://byd.arista-group.co.id/wp-content/uploads/2024/09/Aurora-White.png",
+    category: "matic",
+    new: true,
+    link: "byd-seal-performance/"
+  },
+  {
+    name: "BYD Denza D9 (Electric)",
+    price: "Rp977.000.000",
+    img: "https://denza.arista-group.co.id/wp-content/uploads/2024/12/D9_black_car-2-mob-1.png",
+    category: "matic",
+    new: true,
+    link: "byd-denza-d9/"
+  } 
 ];
 
 function renderMotors(category) {
@@ -207,7 +302,7 @@ slideContainer.addEventListener("touchend", e => {
 // init
 showSlide(0);
 
-/* Fungsi untuk memunculkan pop-up foto setelah 20 detik (20000 milidetik)
+// Fungsi untuk memunculkan pop-up foto setelah 20 detik (20000 milidetik)
 setTimeout(function() {
     document.getElementById('popup-foto-promo').style.display = 'flex';
 }, 20000); 
@@ -216,4 +311,3 @@ setTimeout(function() {
 function closeFotoPopup() {
     document.getElementById('popup-foto-promo').style.display = 'none';
 }
-*/
