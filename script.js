@@ -8,7 +8,7 @@ const motors = [
     img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
     new: true,
-    link: "Iphone11/"
+    link: "iphone11/"
   },
   
 ];
