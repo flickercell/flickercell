@@ -10,6 +10,22 @@ const motors = [
     new: false,
     link: "iphone11/"
   },
+      {
+    name: "Iphone 12 Second Ibox 256GB",
+    price: "205.000.000",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZitlLMfl705_AlQdWXSG3uOSyaeMSn6Kg_j7UhSyS_A&s=10",
+    category: "matic",
+    new: false,
+    link: "iphone11/"
+  },
+      {
+    name: "Iphone 13 Second Ibox 256GB",
+    price: "205.000.000",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PRezB9mjLIJ8JK8098HScSXAjXFBwUmINMoo44D02zsuR9dAC1qp1B0&s=10",
+    category: "matic",
+    new: false,
+    link: "iphone11/"
+  },
 ];
 
 function renderMotors(category) {
