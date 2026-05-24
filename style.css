@@ -1,0 +1,597 @@
+
+/* === Global Style === */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #fff;
+  color: #222;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  border-bottom: 4px solid #1339c2;
+  padding: 8px 0;
+}
+header img {
+  width: 150px;
+  height: auto;
+}
+
+/* === Main Section === */
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* === Tabs / Kategori === */
+.tabs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+.tab {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+  transition: color 0.3s ease;
+}
+.tab:hover {
+  color: #000;
+}
+.tab.active {
+  color: red;
+}
+.tab.active::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: red;
+  width: 100%;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+/* === Grid Motor Container === */
+.motor-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 18px;
+  justify-content: center;
+}
+
+/* === Motor Card === */
+.motor-card {
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  background: #fff;
+}
+.motor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+.motor-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+.new-label {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  color: red;
+  font-weight: bold;
+  font-size: 14px;
+}
+.motor-card .info {
+  padding: 12px 16px 20px;
+}
+.motor-card h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: bold;
+}
+.motor-card p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+.price {
+  color: #111;
+  font-weight: bold;
+  margin: 4px 0 14px;
+  font-size: 12px;
+}
+.btn {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: red;
+  color: #fff;
+  border-color: red;
+}
+
+
+header a img,
+footer a img {
+  transition: opacity 0.3s ease;
+}
+
+header a img:hover,
+footer a img:hover {
+  opacity: 0.85;
+  cursor: pointer;
+}
+/* === SLIDER KHUSUS HALAMAN POST (Seperti beat.html) === */
+.image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* biar gak terlalu besar di desktop */
+  margin: 0 auto 1.5rem;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f8f8f8;
+}
+
+.slider-wrapper {
+  display: flex;
+  width: 100%;
+  transition: transform 0.4s ease-in-out;
+  touch-action: pan-y;
+}
+
+.slider-wrapper img {
+  width: 100%;
+  flex-shrink: 0;
+  object-fit: contain;
+  background: #fff;
+}
+
+/* === FOOTER === */
+footer {
+  background: #111;
+  color: #fff;
+  padding: 40px 5vw 25px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 40px;
+}
+
+/* Bagian kiri */
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.footer-logo img {
+  width: 120px;
+  height: auto;
+}
+
+.footer-address {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* Menu tengah */
+.footer-menu {
+  flex: 0.5;
+  text-align: center;
+}
+
+.footer-menu h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-menu ul li {
+  margin-bottom: 5px;
+}
+
+.footer-menu ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-menu ul li a:hover {
+  color: #fff;
+}
+
+/* Ikuti Kami kanan */
+.footer-social {
+  flex: 0.5;
+  text-align: right;
+}
+
+.footer-social h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 18px;
+  margin-left: 10px;
+  transition: transform 0.2s, color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #e60012;
+  transform: scale(1.15);
+}
+
+/* Copyright */
+footer small {
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* --- TOMBOL WHATSAPP FLOATING --- */
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25d366; /* Hijau khas WA */
+  border-radius: 50%;
+  display: flex !important; /* Memaksa isi di tengah */
+  justify-content: center !important;
+  align-items: center !important;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  z-index: 9999;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Mengatur Ikon SVG di Dalamnya */
+.whatsapp-float svg {
+  width: 32px !important; /* Ukuran ikon yang pas */
+  height: auto;
+  fill: white !important; /* Memaksa warna ikon jadi putih bersih */
+  display: block;
+}
+
+/* Efek saat tombol disentuh atau kursor di atasnya */
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #128c7e; /* Hijau lebih gelap saat aktif */
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Efek Denyut (Pulse) Halus - Opsional tapi Keren */
+@keyframes pulse-green {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+.whatsapp-float {
+  animation: pulse-green 2s infinite;
+}
+
+/* Penyesuaian Otomatis untuk Layar HP */
+@media screen and (max-width: 768px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+  .whatsapp-float svg {
+    width: 28px !important;
+  }
+}
+
+/* --- POP-UP HANYA FOTO --- */
+
+/* Overlay Latar Belakang Gelap */
+.popup-overlay-foto {
+    display: none; /* Awalnya sembunyi */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Lebih gelap agar foto menonjol */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.4s ease;
+}
+
+/* Wadah Konten (Mengikuti ukuran foto) */
+.popup-content-foto {
+    position: relative;
+    width: 90%;
+    max-width: 500px; /* Ukuran maksimal lebar foto */
+    border-radius: 10px;
+    overflow: hidden; /* Agar sudut foto melengkung sesuai wadah */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Mengatur Foto di Dalam */
+.promo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.promo-img:hover {
+    transform: scale(1.02); /* Efek zoom halus saat di-hover */
+}
+
+/* Tombol Close (X) Putih di Atas Foto */
+.close-btn-foto {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white; /* Warna putih agar terlihat di atas foto */
+    cursor: pointer;
+    z-index: 10001;
+    text-shadow: 0 1px 5px rgba(0,0,0,0.5); /* Shadow agar teks jelas */
+}
+
+.close-btn-foto:hover {
+    color: #ff4d4d; /* Merah saat di-hover */
+}
+
+/* Animasi Muncul */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Penyesuaian untuk Layar Kecil (HP) */
+@media screen and (max-width: 768px) {
+    .popup-content-foto {
+        width: 85%;
+        max-width: 350px;
+    }
+}
+
+
+.spesifikasi-tab {
+  background: #333;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.spesifikasi-tab:hover {
+  background: #ff2a2a;
+}
+
+.spesifikasi-tab.active {
+  background: #ff2a2a;
+  color: #fffl;
+}
+
+.spesifikasi-content {
+  display: none;
+}
+
+.spesifikasi-content.active {
+  display: block;
+}
+
+.slide-hint {
+  text-align: center;
+  font-style: italic;
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 10px;
+  animation: fadeSlide 2s ease-in-out infinite alternate;
+}
+@keyframes fadeSlide {
+  from { opacity: 0.6; transform: translateY(0px); }
+  to { opacity: 1; transform: translateY(-2px); }
+}
+
+/* === RESPONSIVE (Mobile) === */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .footer-left, 
+  .footer-menu, 
+  .footer-social {
+    flex: unset;
+    text-align: center;
+  }
+
+  .social-icons a {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+}
+
+
+/* dots */
+.dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dots span {
+  height: 8px;
+  width: 8px;
+  margin: 5px;
+  display: inline-block;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dots .active {
+  background: red;
+}
+
+/* === RESPONSIVE FIX (agar desktop tetap 1 foto per slide) === */
+@media (min-width: 768px) {
+  .slider-wrapper img {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* === Responsive Fix === */
+@media (max-width: 900px) {
+  h2 {
+    font-size: 24px;
+  }
+  .tab {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 600px) {
+  .motor-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom di HP */
+  }
+  .motor-card h3 {
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+    .post-container h1 {
+    font-size: 1.4rem;
+  }
+  .post-container img {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 400px) {
+  .motor-container {
+    grid-template-columns: 1fr; /* fallback 1 kolom di layar super kecil */
+  }
+}
+
+/* === Halaman Post (beat.html & lainnya) === */
+.post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  color: #222;
+}
+
+.post-container h1 {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  border-left: 5px solid red;
+  padding-left: 10px;
+}
+
+.post-container img {
+  display: block;
+  max-width: 700px; /* batas lebar di desktop */
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px auto; /* center dan jarak bawah */
+}
+
+.post-container p {
+  margin-bottom: 18px;
+  font-size: 16px;
+}
+
+/* Tombol kembali */
+.back-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 10px 18px;
+  background: red;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.back-btn:hover {
+  background: #c40000;
+}
