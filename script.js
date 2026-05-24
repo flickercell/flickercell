@@ -222,7 +222,7 @@ slideContainer.addEventListener("touchend", e => {
 // init
 showSlide(0);
 
-// Fungsi untuk memunculkan pop-up foto setelah 20 detik (20000 milidetik)
+/* Fungsi untuk memunculkan pop-up foto setelah 20 detik (20000 milidetik)
 setTimeout(function() {
     document.getElementById('popup-foto-promo').style.display = 'flex';
 }, 20000); 
@@ -231,3 +231,4 @@ setTimeout(function() {
 function closeFotoPopup() {
     document.getElementById('popup-foto-promo').style.display = 'none';
                           }
+*/
