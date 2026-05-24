@@ -7,7 +7,7 @@ const motors = [
     price: "Rp6.300.000",
     img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
-    new: true,
+    new: false,
     link: "iphone11/"
   },
   
