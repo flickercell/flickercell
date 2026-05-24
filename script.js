@@ -5,10 +5,10 @@ const motors = [
       {
     name: "BYD Atto 1 (Dynamic)",
     price: "205.000.000",
-    img: "https://byd.arista-group.co.id/wp-content/uploads/2025/07/Atto-1-Apricity-White-.png",
+    img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
-    new: true,
-    link: "byd-atto1-dynamic/"
+    new: false,
+    link: "iphone11/"
   },
   {
     name: "BYD Atto 1 (Premium)",
