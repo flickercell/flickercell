@@ -3,7 +3,7 @@
 // ==============================
 const motors = [
       {
-    name: "BYD Atto 1 (Dynamic)",
+    name: "Iphone 11 Second Ibox 256GB",
     price: "205.000.000",
     img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
