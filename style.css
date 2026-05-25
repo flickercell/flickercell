@@ -445,5 +445,45 @@ footer small { display: block; margin-top: 50px; text-align: center; color: #555
   .address-box p { text-align: center; }
   
   .buy-now-btn { max-width: 100%; } /* Melebar penuh di HP agar mudah ditap jari */
-  }
+
+   .image-slider {
+  position: relative;
+  width: 100%;
+  max-width: 500px; 
+  margin: 0 auto 0 auto; /* UBAH: Margin bawah jadikan 0 agar menempel ke teks di bawahnya */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f8f8f8;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.product-info-header {
+  margin-top: 5px; /* UBAH: Kecilkan margin atas dari 15px menjadi 5px agar naik mendekati foto */
+  text-align: left;
+} 
+.post-container {
+  max-width: 600px;
+  margin: 5px auto 20px auto; /* UBAH: Jarak atas dari 20px kita pangkas jadi 5px saja */
+  padding: 0 15px;
+   }
+
+.product-info-header .product-price {
+  color: #25D366; 
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 2px 0; /* UBAH: Margin bawah harga dibuat tipis (2px) */
+}
+
+.product-info-header h1 {
+  font-size: 24px;
+  margin: 0 !important; /* Memastikan tidak ada margin bawaan browser yang bikin renggang */
+  color: #222222 !important;
+  font-weight: bold;
+  text-align: left;
+}
+   
+   
+
+
+}
   
