@@ -585,22 +585,7 @@ footer small {
     transform: scale(1.02); /* Efek zoom halus saat di-hover */
 }
 
-/* Tombol Close (X) Putih di Atas Foto */
-.close-btn-foto {
-    position: absolute;
-    top: 5px;
-    right: 12px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white; /* Warna putih agar terlihat di atas foto */
-    cursor: pointer;
-    z-index: 10001;
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5); /* Shadow agar teks jelas */
-}
 
-.close-btn-foto:hover {
-    color: #ff4d4d; /* Merah saat di-hover */
-}
 
 /* Animasi Muncul */
 @keyframes fadeIn {
@@ -616,33 +601,6 @@ footer small {
     }
 }
 
-
-.spesifikasi-tab {
-  background: #333;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.spesifikasi-tab:hover {
-  background: #ff2a2a;
-}
-
-.spesifikasi-tab.active {
-  background: #ff2a2a;
-  color: #fffl;
-}
-
-.spesifikasi-content {
-  display: none;
-}
-
-.spesifikasi-content.active {
-  display: block;
-}
 
 .slide-hint {
   text-align: center;
