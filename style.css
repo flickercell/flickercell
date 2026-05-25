@@ -320,7 +320,7 @@ header a img:hover, footer a img:hover {
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
+  width: 95%;
   max-width: 400px;
   padding: 14px;
   background-color: #25D366; 
