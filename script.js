@@ -185,9 +185,12 @@ document.addEventListener("DOMContentLoaded", () => {
       
       if (postStartX - postEndX > 50) {
         if (postCurrentIndex < totalPostSlides - 1) postCurrentIndex++;
-      } else if (postEndX - startX > 50) {
-        if (postCurrentIndex > 0) postCurrentIndex--;
+      } else if (postEndX - postStartX > 50) { // <-- Sudah diganti jadi postStartX
+             if (postCurrentIndex > 0) {
+              postCurrentIndex--;
+  }
       }
+      
       
       currentSlide(postCurrentIndex);
     });
