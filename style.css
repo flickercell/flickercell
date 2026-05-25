@@ -328,21 +328,22 @@ footer {
   transform: scale(1.15);
 }
 
-/* Menjinakkan ukuran gambar logo biar tajam dan gak kegedean */
-.social-icons img {
-  width: 50px;            /* Mengunci lebar visual agar pas dengan icon Font Awesome */
-  height: 50px;           /* Mengunci tinggi agar tidak gepeng */
-  object-fit: contain;
-  display: inline-block;
-  vertical-align: middle; 
-  margin-top: -3px;       /* Menarik posisi gambar ke atas sedikit agar sejajar lurus */
+/* Menjinakkan ukuran gambar logo biar tajam dan gak kegedean (SUDAH DIPERBAIKI SELEKTORNYA) */
+.social-icons a img {
+  width: 24px !important;    /* Mengunci lebar visual agar pas dengan icon Font Awesome */
+  height: 24px !important;   /* Mengunci tinggi agar tidak gepeng */
+  object-fit: contain !important;
+  display: inline-block !important;
+  vertical-align: middle !important; 
+  margin-top: -3px !important; /* Menarik posisi gambar ke atas sedikit agar sejajar lurus */
   transition: transform 0.2s ease-in-out;
 }
 
 /* Efek hover melayang ketika kursor diarahkan ke logo gambar */
-.social-icons img:hover {
-  transform: scale(1.15);
+.social-icons a img:hover {
+  transform: scale(1.15) !important;
 }
+
 
 
 /* Judul H4 di setiap bagian */
