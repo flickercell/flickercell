@@ -286,12 +286,12 @@ footer {
 .footer-left {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 10px;
   flex: 1;
 }
 
 .footer-logo img {
-  width: 180px;
+  width: 250px;
   height: auto;
 }
 
