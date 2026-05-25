@@ -335,7 +335,9 @@ footer {
   object-fit: contain !important;
   display: inline-block !important;
   vertical-align: middle !important; 
-  margin-top: -3px !important; /* Menarik posisi gambar ke atas sedikit agar sejajar lurus */
+  margin-top: -6px !important; /* Menarik posisi gambar ke atas sedikit agar sejajar lurus */
+  margin-left: -4px !important;
+  margin-right: -4px !important
   transition: transform 0.2s ease-in-out;
 }
 
