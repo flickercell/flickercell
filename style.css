@@ -386,6 +386,103 @@ footer small {
   font-size: 12px;
 }
 
+/* === DETAIL PRODUK POSTINGAN === */
+
+/* Menghilangkan garis merah bawaan di artikel */
+.post {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding-bottom: 10px;
+}
+
+/* Penataan Info Harga di Atas Judul */
+.product-info-header {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.product-info-header .product-price {
+  color: #25D366; /* Warna hijau khas toko kamu */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.product-info-header h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #ffffff; /* Mengikuti tema gelap/terang web kamu */
+}
+
+/* Bagian Indikator Titik Slider (Slider Dots) */
+.image-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider-dots {
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.slider-dots .dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #555555; /* Warna titik saat pasif */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active, .slider-dots .dot:hover {
+  background-color: #ffffff; /* Warna titik saat aktif */
+}
+
+/* Penataan Kotak Deskripsi & Minus */
+.product-description {
+  margin-top: 25px;
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+}
+
+.product-description h2 {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.desc-box {
+  background: #1a1a1a; /* Background boks spesifikasi gelap serasi */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.desc-box h3 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+.desc-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #dddddd;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* Desain khusus pembeda untuk kotak minus */
+.minus-box {
+  border-left: 3px solid #ff4d4d; /* Garis aksen merah tipis khusus penanda minus */
+}
+
 
 
 
