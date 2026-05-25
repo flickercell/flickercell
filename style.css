@@ -208,7 +208,7 @@ header a img:hover, footer a img:hover {
   overflow: hidden;
   border-radius: 12px;
   background: #f8f8f8;
-  box-shadow: 0 2px 10px rgba(nya 0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 .slider-wrapper {
   display: flex;
@@ -444,6 +444,6 @@ footer small { display: block; margin-top: 50px; text-align: center; color: #555
   .gateway-images img { margin: 0 auto; }
   .address-box p { text-align: center; }
   
-  .buy-now-btn { max-width: 100%; }
-
-}
+  .buy-now-btn { max-width: 100%; } /* Melebar penuh di HP agar mudah ditap jari */
+  }
+  
