@@ -69,7 +69,7 @@ h2 {
 
 #motorList {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   padding: 15px;
   max-width: 1200px;
@@ -166,18 +166,6 @@ h2 {
   border-radius: 999px;
   font-size: 12px;
   font-weight: bold;
-}
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 992px) {
-
-  #motorList {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
 }
 
 /* =========================
