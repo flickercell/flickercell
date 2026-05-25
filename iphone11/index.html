@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -14,25 +13,26 @@
     <article class="post">
 
       <div class="image-slider">
-        <div class="slider-wrapper">
+        <div class="slider-wrapper" id="sliderWrapper">
           <img src="https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg" alt="Foto iPhone 11 Red">
           <img src="https://www.anugrahpratama.com/wp-content/uploads/2025/02/APPLE-Iphone-11-128GB-Green.webp" alt="Foto iPhone 11 Green">
         </div>
         
         <div class="slider-dots">
-          <span class="dot active"></span>
-          <span class="dot"></span>
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
         </div>
       </div>
 
       <div class="product-info-header">
-        <p class="product-price">Rp 4.500.000</p> <h1>Iphone 11 Second Ibox</h1>
+        <p class="product-price">Rp 4.500.000</p>
+        <h1>Iphone 11 Second Ibox</h1>
       </div>
 
       <div class="product-description">
         <h2>Spesifikasi & Kondisi</h2>
-        <div class="desc-box">
-          <h3>📋 Spesifikasi HP:</h3>
+        <div class="desc-box full-desc">
+          <h3>📋 Keterangan Unit:</h3>
           <ul>
             <li><strong>Memori:</strong> 128 GB</li>
             <li><strong>Kondisi Layar:</strong> Original TrueTone ON</li>
@@ -40,9 +40,9 @@
             <li><strong>Sinyal / IMEI:</strong> Aman Terdaftar Kemenperin (All Operator Resmi iBox)</li>
             <li><strong>Kelengkapan:</strong> Fullset (Dusbox + Kabel Charger)</li>
           </ul>
-        </div>
-
-        <div class="desc-box minus-box">
+          
+          <hr class="desc-divider">
+          
           <h3>⚠️ Minus / Catatan:</h3>
           <ul>
             <li>Ada dent/lecet pemakaian halus di sudut bodi bawah (cek foto terakhir).</li>
@@ -50,9 +50,29 @@
           </ul>
         </div>
       </div>
+
+      <div class="buy-action-container">
+        <a href="https://wa.me/6285156222635?text=Halo%20FlickerCell,%20saya%20tertarik%20dengan%20iPhone%2011%20Second%20iBox" class="buy-now-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> Beli Sekarang
+        </a>
+      </div>
       
     </article>
   </main>
+
+  <script>
+    function currentSlide(index) {
+      const wrapper = document.getElementById('sliderWrapper');
+      const dots = document.querySelectorAll('.slider-dots .dot');
+      
+      // Geser Gambar
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Ubah Titik Aktif
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  </script>
 
   <script src="../include.js" defer></script>
   <script src="../script.js" defer></script>
