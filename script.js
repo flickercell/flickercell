@@ -52,7 +52,6 @@ function renderMotors(category) {
 
     .forEach(motor => {
 
-      // seluruh card jadi link
       const card = document.createElement("a");
 
       card.className = "motor-card";
@@ -138,3 +137,91 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+
+
+// ==========================
+// SLIDER PROMO AUTO
+// ==========================
+let slideIndex = 0;
+
+const slides = document.querySelectorAll(".slide");
+
+const slideContainer = document.querySelector(".slides");
+
+const dotsContainer = document.querySelector(".dots");
+
+
+// dots
+slides.forEach((_, i) => {
+
+  let dot = document.createElement("span");
+
+  dot.addEventListener("click", () => showSlide(i));
+
+  dotsContainer.appendChild(dot);
+
+});
+
+const dots = document.querySelectorAll(".dots span");
+
+function showSlide(i) {
+
+  slideIndex = i;
+
+  slideContainer.style.transform =
+    `translateX(-${i * 100}%)`;
+
+  dots.forEach(d =>
+    d.classList.remove("active")
+  );
+
+  dots[i].classList.add("active");
+
+}
+
+
+// auto slide
+setInterval(() => {
+
+  slideIndex =
+    (slideIndex + 1) % slides.length;
+
+  showSlide(slideIndex);
+
+}, 7000);
+
+
+// swipe support
+let startX = 0;
+
+slideContainer.addEventListener("touchstart", e => {
+
+  startX = e.touches[0].clientX;
+
+});
+
+slideContainer.addEventListener("touchend", e => {
+
+  let endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+
+    slideIndex =
+      (slideIndex + 1) % slides.length;
+
+  }
+
+  else if (endX - startX > 50) {
+
+    slideIndex =
+      (slideIndex - 1 + slides.length) % slides.length;
+
+  }
+
+  showSlide(slideIndex);
+
+});
+
+
+// init
+showSlide(0);
