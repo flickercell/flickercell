@@ -8,7 +8,7 @@ const motors = [
     sold: "Terjual 2",
     img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
-    new: false,
+    new: true,
     link: "iphone11/"
   },
   {
