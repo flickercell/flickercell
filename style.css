@@ -38,40 +38,17 @@ h2 {
   flex-wrap: wrap;
   gap: 20px;
   margin-bottom: 25px;
-}
-.tab {
-  font-size: 18px;
-  font-weight: bold;
-  cursor: pointer;
-  color: #555;
-  position: relative;
-  transition: color 0.3s ease;
-}
-.tab:hover {
-  color: #000;
-}
-.tab.active {
-  color: red;
-}
-.tab.active::after {
-  content: "";
-  display: block;
-  height: 3px;
-  background: red;
-  width: 100%;
-  margin-top: 4px;
-  border-radius: 2px;
-}
-
 /* =========================
    GRID PRODUK
 ========================= */
 
 #motorList {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 16px;
   padding: 15px;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* =========================
@@ -103,7 +80,7 @@ h2 {
 
 .motor-card img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   object-fit: contain;
   display: block;
   margin-bottom: 12px;
@@ -135,7 +112,7 @@ h2 {
 
 .price {
   margin-top: 8px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: #111;
 }
@@ -167,6 +144,18 @@ h2 {
 }
 
 /* =========================
+   TABLET
+========================= */
+
+@media (max-width: 992px) {
+
+  #motorList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+/* =========================
    MOBILE
 ========================= */
 
@@ -175,21 +164,54 @@ h2 {
   #motorList {
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
+    padding: 12px;
+  }
+
+  .motor-card {
+    padding: 10px;
   }
 
   .motor-card img {
-    height: 150px;
+    height: 140px;
   }
 
   .motor-card h3 {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .price {
-    font-size: 16px;
+    font-size: 17px;
   }
 
+  .sold {
+    font-size: 12px;
+  }
+
+}}
+.tab {
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #555;
+  position: relative;
+  transition: color 0.3s ease;
 }
+.tab:hover {
+  color: #000;
+}
+.tab.active {
+  color: red;
+}
+.tab.active::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: red;
+  width: 100%;
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
 
 
 
