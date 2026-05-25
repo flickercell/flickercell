@@ -386,6 +386,104 @@ footer small {
   font-size: 12px;
 }
 
+/* === DETAIL PRODUK POSTINGAN === */
+
+/* Menghilangkan garis merah bawaan di artikel */
+.post {
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  padding-bottom: 10px;
+}
+
+/* Penataan Info Harga di Atas Judul */
+.product-info-header {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.product-info-header .product-price {
+  color: #25D366; /* Warna hijau khas toko kamu */
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.product-info-header h1 {
+  font-size: 22px;
+  margin: 0;
+  color: #ffffff; /* Mengikuti tema gelap/terang web kamu */
+}
+
+/* Bagian Indikator Titik Slider (Slider Dots) */
+.image-slider {
+  position: relative;
+  width: 100%;
+}
+
+.slider-dots {
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+}
+
+.slider-dots .dot {
+  cursor: pointer;
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #555555; /* Warna titik saat pasif */
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.slider-dots .dot.active, .slider-dots .dot:hover {
+  background-color: #ffffff; /* Warna titik saat aktif */
+}
+
+/* Penataan Kotak Deskripsi & Minus */
+.product-description {
+  margin-top: 25px;
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+}
+
+.product-description h2 {
+  font-size: 16px;
+  color: #aaaaaa;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.desc-box {
+  background: #1a1a1a; /* Background boks spesifikasi gelap serasi */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.desc-box h3 {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+.desc-box ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #dddddd;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+
+/* Desain khusus pembeda untuk kotak minus */
+.minus-box {
+  border-left: 3px solid #ff4d4d; /* Garis aksen merah tipis khusus penanda minus */
+}
+
+
 
 
 
@@ -448,117 +546,6 @@ footer small {
   }
 }
 
-/* --- POP-UP HANYA FOTO --- */
-
-/* Overlay Latar Belakang Gelap */
-.popup-overlay-foto {
-    display: none; /* Awalnya sembunyi */
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8); /* Lebih gelap agar foto menonjol */
-    z-index: 10000;
-    justify-content: center;
-    align-items: center;
-    animation: fadeIn 0.4s ease;
-}
-
-/* Wadah Konten (Mengikuti ukuran foto) */
-.popup-content-foto {
-    position: relative;
-    width: 90%;
-    max-width: 500px; /* Ukuran maksimal lebar foto */
-    border-radius: 10px;
-    overflow: hidden; /* Agar sudut foto melengkung sesuai wadah */
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
-/* Mengatur Foto di Dalam */
-.promo-img {
-    width: 100%;
-    height: auto;
-    display: block;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.promo-img:hover {
-    transform: scale(1.02); /* Efek zoom halus saat di-hover */
-}
-
-/* Tombol Close (X) Putih di Atas Foto */
-.close-btn-foto {
-    position: absolute;
-    top: 5px;
-    right: 12px;
-    font-size: 30px;
-    font-weight: bold;
-    color: white; /* Warna putih agar terlihat di atas foto */
-    cursor: pointer;
-    z-index: 10001;
-    text-shadow: 0 1px 5px rgba(0,0,0,0.5); /* Shadow agar teks jelas */
-}
-
-.close-btn-foto:hover {
-    color: #ff4d4d; /* Merah saat di-hover */
-}
-
-/* Animasi Muncul */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* Penyesuaian untuk Layar Kecil (HP) */
-@media screen and (max-width: 768px) {
-    .popup-content-foto {
-        width: 85%;
-        max-width: 350px;
-    }
-}
-
-
-.spesifikasi-tab {
-  background: #333;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.spesifikasi-tab:hover {
-  background: #ff2a2a;
-}
-
-.spesifikasi-tab.active {
-  background: #ff2a2a;
-  color: #fffl;
-}
-
-.spesifikasi-content {
-  display: none;
-}
-
-.spesifikasi-content.active {
-  display: block;
-}
-
-.slide-hint {
-  text-align: center;
-  font-style: italic;
-  color: #aaa;
-  font-size: 0.9rem;
-  margin-top: 10px;
-  animation: fadeSlide 2s ease-in-out infinite alternate;
-}
-@keyframes fadeSlide {
-  from { opacity: 0.6; transform: translateY(0px); }
-  to { opacity: 1; transform: translateY(-2px); }
-}
 
 /* === RESPONSIVE (Mobile) === */
 @media (max-width: 768px) {
@@ -582,48 +569,6 @@ footer small {
   }
 }
 
-.slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px;
-  border-radius: 12px;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  min-width: 100%;
-}
-
-.slide img {
-  width: 100%;
-  display: block;
-  border-radius: 12px;
-}
-
-
-/* dots */
-.dots {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.dots span {
-  height: 8px;
-  width: 8px;
-  margin: 5px;
-  display: inline-block;
-  background: #ccc;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.dots .active {
-  background: red;
-}
 
 /* === RESPONSIVE FIX (agar desktop tetap 1 foto per slide) === */
 @media (min-width: 768px) {
