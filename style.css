@@ -328,6 +328,23 @@ footer {
   transform: scale(1.15);
 }
 
+/* Menjinakkan ukuran gambar logo biar tajam dan gak kegedean */
+.social-icons img {
+  width: 17px;            /* Mengunci lebar visual agar pas dengan icon Font Awesome */
+  height: 17px;           /* Mengunci tinggi agar tidak gepeng */
+  object-fit: contain;
+  display: inline-block;
+  vertical-align: middle; 
+  margin-top: -3px;       /* Menarik posisi gambar ke atas sedikit agar sejajar lurus */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efek hover melayang ketika kursor diarahkan ke logo gambar */
+.social-icons img:hover {
+  transform: scale(1.15);
+}
+
+
 /* Judul H4 di setiap bagian */
 footer h4 {
   font-size: 15px;
