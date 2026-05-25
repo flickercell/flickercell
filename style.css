@@ -330,7 +330,7 @@ footer {
 
 /* Menjinakkan ukuran gambar logo biar tajam dan gak kegedean */
 .social-icons img {
-  width: 17px;            /* Mengunci lebar visual agar pas dengan icon Font Awesome */
+  width: 22px;            /* Mengunci lebar visual agar pas dengan icon Font Awesome */
   height: 17px;           /* Mengunci tinggi agar tidak gepeng */
   object-fit: contain;
   display: inline-block;
