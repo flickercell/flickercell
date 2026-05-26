@@ -34,8 +34,34 @@
 <main>
   <h2>Pilih Iphone Kebutuhan Mu</h2>
   <br>
+
+  <div class="category-filter-container" style="display: flex; gap: 10px; overflow-x: auto; padding: 10px 0; margin-bottom: 20px; scrollbar-width: none; -webkit-overflow-scrolling: touch;">
+    
+    <button class="filter-btn active" data-category="all" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background-color: #333; color: #fff; cursor: pointer; font-size: 13px; white-space: nowrap; font-weight: bold;">
+      Semua
+    </button>
+
+    <button class="filter-btn" data-category="ex-inter" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background-color: #fff; color: #333; cursor: pointer; font-size: 13px; white-space: nowrap;">
+      ex inter
+    </button>
+
+    <button class="filter-btn" data-category="new" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background-color: #fff; color: #333; cursor: pointer; font-size: 13px; white-space: nowrap;">
+      New
+    </button>
+
+    <button class="filter-btn" data-category="bea-cukai" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background-color: #fff; color: #333; cursor: pointer; font-size: 13px; white-space: nowrap;">
+      Bea Cukai
+    </button>
+
+    <button class="filter-btn" data-category="ex-ibox" style="padding: 8px 16px; border-radius: 20px; border: 1px solid #ccc; background-color: #fff; color: #333; cursor: pointer; font-size: 13px; white-space: nowrap;">
+      ex ibox
+    </button>
+
+  </div>
+
   <div class="motor-container" id="motorList"></div>
 </main>
+
 
 <footer>
   <div class="footer-container">
