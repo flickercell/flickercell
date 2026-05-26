@@ -186,6 +186,76 @@ header a img:hover, footer a img:hover {
   background: red;
 }
 
+
+/* --- STYLING UTAMA CONTAINER & TOMBOL --- */
+.category-filter-container {
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none; /* Hilangkan scrollbar di Firefox */
+  -webkit-overflow-scrolling: touch; /* Scroll smooth di iPhone */
+}
+
+.category-filter-container::-webkit-scrollbar {
+  display: none; /* Hilangkan scrollbar di Chrome/Safari */
+}
+
+.filter-btn {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+
+/* --- TAMPILAN DESKTOP (Layar Lebar) --- */
+@media (min-width: 769px) {
+  .category-filter-container {
+    justify-content: center; /* Tombol otomatis ke tengah di PC */
+    gap: 10px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  
+  .filter-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+
+/* --- TAMPILAN MOBILE (Layar HP) --- */
+@media (max-width: 768px) {
+  .category-filter-container {
+    justify-content: flex-start; /* Mepet kiri di HP agar bisa di-slide/geser */
+    gap: 6px;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+  }
+  
+  .filter-btn {
+    padding: 6px 12px; /* Ukuran boks mengecil di HP */
+    font-size: 11px;    /* Tulisan mengecil di HP */
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .filter-btn.active {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+
 /* ============================================================
    HALAMAN DETIL POSTINGAN (KHUSUS PRODUK / IPHONE)
 ============================================================ */
