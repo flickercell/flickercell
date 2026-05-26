@@ -84,7 +84,7 @@ header a img:hover, footer a img:hover {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 16px;
   padding: 15px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
@@ -190,7 +190,7 @@ header a img:hover, footer a img:hover {
    HALAMAN DETIL POSTINGAN (KHUSUS PRODUK / IPHONE)
 ============================================================ */
 .post-container {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 20px auto;
   padding: 0 15px;
 }
