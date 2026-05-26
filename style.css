@@ -64,7 +64,7 @@ header a img:hover, footer a img:hover {
   color: #000;
 }
 .tab.active {
-  color: red;
+  color: #239dad;
 }
 .tab.active::after {
   content: "";
