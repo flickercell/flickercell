@@ -2,63 +2,61 @@
 // DAFTAR PRODUK IPHONE (UNTUK BERANDA / HOMEPAGE)
 // ============================================================
 const motors = [
-    {
-  name: "Iphone X Second All Operator",
-  price: "Rp. 2.700.000",
-  sold: "Terjual 70",
-  img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
-  category: "matic",
-  new: false,
-  link: "iphone/"
+{
+name: "Iphone X Second All Operator",
+price: "Rp. 2.700.000",
+sold: "Terjual 70",
+img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
+category: "matic",
+new: false,
+link: "iphone/"
 },
 {
-  name: "Iphone XR Second All Operator",
-  price: "Rp. 3.200.000",
-  sold: "Terjual 90",
-  img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
-  category: "matic",
-  new: false,
-  link: "iphone/"
+name: "Iphone XR Second All Operator",
+price: "Rp. 3.200.000",
+sold: "Terjual 90",
+img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
+category: "matic",
+new: false,
+link: "iphone/"
 },
 {
-  name: "Iphone XS Second All Operator",
-  price: "Rp. 3.200.000",
-  sold: "Terjual 46",
-  img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
-  category: "matic",
-  new: false,
-  link: "iphone/"
+name: "Iphone XS Second All Operator",
+price: "Rp. 3.200.000",
+sold: "Terjual 46",
+img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
+category: "matic",
+new: false,
+link: "iphone/"
 },
 {
-  name: "Iphone XS MAX Second All Operator",
-  price: "Rp. 3.300.000",
-  sold: "Terjual 28",
-  img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
-  category: "matic",
-  new: false,
-  link: "iphone/"
+name: "Iphone XS MAX Second All Operator",
+price: "Rp. 3.300.000",
+sold: "Terjual 28",
+img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
+category: "matic",
+new: false,
+link: "iphone/"
 },
 {
-  name: "Iphone 11 Second All Operator",
-  price: "Rp. 3.600.000",
-  sold: "Terjual 67",
-  img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
-  category: "matic",
-  new: false,
-  link: "iphone/"
+name: "Iphone 11 Second All Operator",
+price: "Rp. 3.600.000",
+sold: "Terjual 67",
+img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
+category: "matic",
+new: false,
+link: "iphone/"
 },
 {
-  name: "Iphone 11 PRO Second All Operator",
-  price: "Rp. 4.000.000",
-  sold: "Terjual 63",
-  img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
-  category: "second",
-  new: false,
-  link: "iphone/"
-},
-  
+name: "Iphone 11 PRO Second All Operator",
+price: "Rp. 4.000.000",
+sold: "Terjual 63",
+img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
+category: "matic", // Diubah ke matic agar sementara muncul di tab pertama
+new: false,
+link: "iphone/"
+}
 ];
-
 // ============================================================
 // RENDER GRID PRODUK (BERANDA / HOMEPAGE)
 // ============================================================
@@ -66,7 +64,6 @@ function renderMotors(category) {
 const list = document.getElementById("motorList");
 if (!list) return;
 list.innerHTML = "";
-// Mengembalikan filter agar membaca kategori motor/iPhone yang aktif di data array-mu
 motors
 .filter(m => m.category === category)
 .forEach(motor => {
@@ -84,10 +81,8 @@ renderMotors("matic");
 // ============================================================
 document.querySelectorAll(".tab").forEach(tab => {
 tab.addEventListener("click", () => {
-// Menghapus class active dari tombol .tab bawaan HTML awalmu
 document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
 tab.classList.add("active");
-// Mengambil filter berdasarkan dataset category (.tab active)
 renderMotors(tab.dataset.category);
 });
 });
@@ -183,7 +178,7 @@ postWrapper.addEventListener("touchend", e => {
 let postEndX = e.changedTouches[0].clientX;
 if (postStartX - postEndX > 50) {
 if (postCurrentIndex < totalPostSlides - 1) postCurrentIndex++;
-} else if (postEndX - startX > 50) {
+} else if (postEndX - postStartX > 50) {
 if (postCurrentIndex > 0) postCurrentIndex--;
 }
 currentSlide(postCurrentIndex);
