@@ -2,43 +2,61 @@
 // DAFTAR PRODUK IPHONE (UNTUK BERANDA / HOMEPAGE)
 // ============================================================
 const motors = [
-
     {
-    name: "Iphone XR Second Berkualitas",
-    price: "Rp. 3.300.000",
-    sold: "Terjual 90",
-    img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
-    category: "matic",
-    new: false,
-    link: "iphone-xr/"
-  },
-  {
-    name: "Iphone 11 Second Ibox 256GB",
-    price: "Rp. 6.000.000",
-    sold: "Terjual 120",
-    img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
-    category: "matic",
-    new: false,
-    link: "iphone11/"
-  },
-  {
-    name: "Iphone 12 Second Ibox 256GB",
-    price: "Rp. 7.000.000",
-    sold: "Terjual 5",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZitlLMfl705_AlQdWXSG3uOSyaeMSn6Kg_j7UhSyS_A&s=10",
-    category: "matic",
-    new: false,
-    link: "iphone12/"
-  },
-  {
-    name: "Iphone 13 Second Ibox 256GB",
-    price: "Rp. 8.000.000",
-    sold: "Terjual 1",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9PRezB9mjLIJ8JK8098HScSXAjXFBwUmINMoo44D02zsuR9dAC1qp1B0&s=10",
-    category: "matic",
-    new: false,
-    link: "iphone13/"
-  },
+  name: "Iphone X Second All Operator",
+  price: "Rp. 2.700.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+{
+  name: "Iphone XR Second All Operator",
+  price: "Rp. 3.200.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+{
+  name: "Iphone XS Second All Operator",
+  price: "Rp. 3.200.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+{
+  name: "Iphone XS MAX Second All Operator",
+  price: "Rp. 3.300.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+{
+  name: "Iphone 11 Second All Operator",
+  price: "Rp. 3.600.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+{
+  name: "Iphone 11 PRO Second All Operator",
+  price: "Rp. 4.000.000",
+  sold: "#",
+  img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
+  category: "matic",
+  new: false,
+  link: "iphone/"
+},
+  
 ];
 
 // ============================================================
