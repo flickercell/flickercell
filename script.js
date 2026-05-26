@@ -73,7 +73,7 @@ motors
 const card = document.createElement("a");
 card.className = "motor-card";
 card.href = motor.link;
-card.innerHTML = \${motor.new ? '<div class="new-label">New!</div>' : ""} <img src="\${motor.img}" alt="\${motor.name}"> <div class="info"> <h3>\${motor.name}</h3> <p class="price">\${motor.price}</p> <p class="sold">\${motor.sold}</p> </div>;
+card.innerHTML = ${motor.new ? '<div class="new-label">New!</div>' : ""} <img src="${motor.img}" alt="${motor.name}"> <div class="info"> <h3>${motor.name}</h3> <p class="price">${motor.price}</p> <p class="sold">${motor.sold}</p> </div>;
 list.appendChild(card);
 });
 }
@@ -101,7 +101,7 @@ includes.forEach(el => {
 const file = el.getAttribute("data-include");
 fetch(file)
 .then(res => {
-if (!res.ok) throw new Error(Gagal memuat \${file});
+if (!res.ok) throw new Error(Gagal memuat ${file});
 return res.text();
 })
 .then(data => {
@@ -129,7 +129,7 @@ dotsContainer.appendChild(dot);
 const mainDots = dotsContainer.querySelectorAll("span");
 function showMainSlide(i) {
 slideIndex = i;
-slideContainer.style.transform = translateX(-\${i * 100}%);
+slideContainer.style.transform = translateX(-${i * 100}%);
 mainDots.forEach(d => d.classList.remove("active"));
 if (mainDots[i]) mainDots[i].classList.add("active");
 }
@@ -167,7 +167,7 @@ function currentSlide(index) {
 const wrapper = document.getElementById('sliderWrapper');
 const dots = document.querySelectorAll('.slider-dots .dot');
 if (wrapper) {
-wrapper.style.transform = translateX(-\${index * 100}%);
+wrapper.style.transform = translateX(-${index * 100}%);
 // Sinkronisasi status aktif lingkaran titik
 dots.forEach(dot => dot.classList.remove('active'));
 if (dots[index]) {
