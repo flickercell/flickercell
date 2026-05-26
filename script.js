@@ -86,7 +86,7 @@ function renderMotors(category) {
     });
 }
 // Jalankan render otomatis pertama kali untuk kategori matic saat beranda dibuka
-renderMotors("matic");
+renderMotors("inter");
 
 // ============================================================
 // NAVIGASI TAB KATEGORI (BERANDA / HOMEPAGE)
