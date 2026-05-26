@@ -27,7 +27,7 @@ const motors = [
   img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
   category: "inter",
   new: false,
-  link: "iphone/"
+  link: "iphone-xs/"
 },
 {
   name: "Iphone XS MAX Second All Operator",
@@ -36,7 +36,7 @@ const motors = [
   img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
   category: "inter",
   new: false,
-  link: "iphone/"
+  link: "iphone-xs-max/"
 },
 {
   name: "Iphone 11 Second All Operator",
@@ -52,7 +52,7 @@ const motors = [
   price: "Rp. 4.000.000",
   sold: "Terjual 63",
   img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
-  category: "sport",
+  category: "inter",
   new: false,
   link: "inter/"
 },
