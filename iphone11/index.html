@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iPhone 11 Second iBox - FlickerCell</title>
-<link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone 11 Second Inter - FlickerCell</title>
+  <link rel="stylesheet" href="../style.css">
+  <div data-include="../header.html"></div>
 </head>
 <body>
-<div data-include="../header.html"></div>
-<main class="post-container">
-<article class="post">
-<div class="image-slider">
-<div class="slider-wrapper" id="sliderWrapper">
-<img src="[https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg](https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg)" alt="Foto iPhone 11 Red">
-<img src="[https://www.anugrahpratama.com/wp-content/uploads/2025/02/APPLE-Iphone-11-128GB-Green.webp](https://www.anugrahpratama.com/wp-content/uploads/2025/02/APPLE-Iphone-11-128GB-Green.webp)" alt="Foto iPhone 11 Green">
-</div>
-<div class="slider-dots">
-<span class="dot active" onclick="currentSlide(0)"></span>
-<span class="dot" onclick="currentSlide(1)"></span>
-</div>
-</div>
-<div class="product-info-header">
-<p class="product-price">Rp 4.500.000</p>
-<h1>Iphone 11 Second Ibox</h1>
-</div>
-<div class="product-description">
-<h2>Spesifikasi & Kondisi</h2>
-<div class="desc-box full-desc">
-<h3>📋 Keterangan Unit:</h3>
-<ul>
-<li><strong>Memori:</strong> 128 GB</li>
-<li><strong>Kondisi Layar:</strong> Original TrueTone ON</li>
-<li><strong>Battery Health (BH):</strong> 85% (Original bawaan, awet)</li>
-<li><strong>Sinyal / IMEI:</strong> Aman Terdaftar Kemenperin (All Operator Resmi iBox)</li>
-<li><strong>Kelengkapan:</strong> Fullset (Dusbox + Kabel Charger)</li>
-</ul>
-<hr class="desc-divider">
-<h3>⚠️ Minus / Catatan:</h3>
-<ul>
-<li>Ada dent/lecet pemakaian halus di sudut bodi bawah (cek foto terakhir).</li>
-<li>Fungsi kamera, Face ID, speaker, dan tombol-tombol semuanya 100% normal lancar tanpa kendala.</li>
-</ul>
-</div>
-</div>
-  
-<div class="buy-action-container">
+
+  <main class="post-container">
+    <article class="post">
+
+      <div class="image-slider">
+        <div class="slider-wrapper" id="sliderWrapper">
+          <img src="https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg" alt="Foto iPhone 11 Red">
+          <img src="https://www.anugrahpratama.com/wp-content/uploads/2025/02/APPLE-Iphone-11-128GB-Green.webp" alt="Foto iPhone 11 Green">
+        </div>
+        
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+        </div>
+      </div>
+
+      <div class="product-info-header">
+        <p class="product-price">Rp 3.600.000</p>
+        <h1>Iphone 11 Second</h1>
+      </div>
+<br>
+      
+        <div class="desc-box full-desc">
+          <h3>Deskripsi</h3>
+         <p>Ready Iphone 11 Mulus Berkualitas <br> All operator</p>
+        
+          <ul>
+            <li><strong>64GB:</strong>Rp 3.600.00</li>
+            <li><strong>256GB:</strong>Rp 4.000.000</li>
+            <li><strong>512GB:</strong>Rp 4.100.000</li>
+
+
+           <p>- Bebas Reset Bukan Kaleng2
+- Fisik Mulus 
+- Kelengkapan Fullset 
+- Fungsi semua normal no minus
+- Garansi unit dan imei 1 bulan
+- Terima Tukar Tambah dengan harga terbaik
+(Garansi tidak termasuk LCD, kesalahan upgrade iOS dan kesalahan penggunaan lainnya)</p>
+
+            <p>SETIAP PEMBELIAN IPHONE DI FLICKERCELL 
+FREE TEMPERED GLASS DAN SOFTCASE</p>
+          </ul>
+          
+          
+          
+        </div>
+      </div>
+
+
+      <div class="buy-action-container">
   <a href="https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell" onclick="window.open('https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell', '_blank'); return false;" class="buy-now-btn" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important; text-decoration: none;">
     <i class="fab fa-whatsapp" style="font-size: 20px !important; margin: 0 !important; padding: 0 !important; line-height: 1 !important;"></i>
     <span style="display: inline-block !important; line-height: 1 !important;">Beli Sekarang via WhatsApp</span>
   </a>
-</div>
-  
-  
-</article>
-</main>
-<script>
-function currentSlide(index) {
-const wrapper = document.getElementById('sliderWrapper');
-const dots = document.querySelectorAll('.slider-dots .dot');
-if (wrapper) {
-wrapper.style.transform = translateX(-${index * 100}%);
-}
-dots.forEach(dot => dot.classList.remove('active'));
-if (dots[index]) {
-dots[index].classList.add('active');
-}
-}
-</script>
-<script src="../include.js" defer></script>
-<script src="../script.js" defer></script>
-<div data-include="../footer.html"></div>
+      </div>
+      
+    </article>
+  </main>
+
+  <script>
+    function currentSlide(index) {
+      const wrapper = document.getElementById('sliderWrapper');
+      const dots = document.querySelectorAll('.slider-dots .dot');
+      
+      // Geser Gambar
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Ubah Titik Aktif
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  </script>
+
+  <script src="../include.js" defer></script>
+  <script src="../script.js" defer></script>
+ <!-- <div data-include="../wa.html"></div> -->
+  <div data-include="../footer.html"></div>
 </body>
 </html>
