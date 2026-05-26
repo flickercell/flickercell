@@ -2,13 +2,23 @@
 // DAFTAR PRODUK IPHONE (UNTUK BERANDA / HOMEPAGE)
 // ============================================================
 const motors = [
+
+    {
+    name: "Iphone XR Second Berkualitas",
+    price: "Rp. 3.300.000",
+    sold: "Terjual 90",
+    img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
+    category: "matic",
+    new: false,
+    link: "iphone-xr/"
+  },
   {
     name: "Iphone 11 Second Ibox 256GB",
     price: "Rp. 6.000.000",
-    sold: "Terjual 2",
+    sold: "Terjual 120",
     img: "https://unboxing.id/wp-content/uploads/2022/06/Iphone-11-red.jpg",
     category: "matic",
-    new: true,
+    new: false,
     link: "iphone11/"
   },
   {
