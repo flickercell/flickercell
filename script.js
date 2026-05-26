@@ -9,7 +9,7 @@ const motors = [
   img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
   category: "inter",
   new: false,
-  link: "iphone/"
+  link: "iphone-x/"
 },
 {
   name: "Iphone XR Second All Operator",
