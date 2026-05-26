@@ -92,16 +92,18 @@ const motors = [
   
 ];
 
-// ============================================================
-// RENDER GRID PRODUK (BERANDA / HOMEPAGE)
-// ============================================================
 function renderMotors(category) {
   const list = document.getElementById("motorList");
   if (!list) return;
   list.innerHTML = "";
 
   motors
-    .filter(m => m.category === category)
+    .filter(m => {
+      // Jika kategori yang dipilih adalah "all", tampilkan SEMUA produk tanpa filter
+      if (category === "all") return true;
+      // Jika bukan "all", saring ketat sesuai kategorinya (inter atau ibox)
+      return m.category === category;
+    })
     .forEach(motor => {
       const card = document.createElement("a");
       card.className = "motor-card";
@@ -118,8 +120,10 @@ function renderMotors(category) {
       list.appendChild(card);
     });
 }
-// Jalankan render otomatis pertama kali untuk kategori matic saat beranda dibuka
-renderMotors("inter");
+
+// Saat pertama kali web dibuka, jalankan semua produk biar gak kosong
+renderMotors("all");
+
 
 // ============================================================
 // NAVIGASI TAB KATEGORI (BERANDA / HOMEPAGE)
