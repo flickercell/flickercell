@@ -66,9 +66,9 @@ function renderMotors(category) {
 const list = document.getElementById("motorList");
 if (!list) return;
 list.innerHTML = "";
-// Memfilter produk: jika kategori "all" maka lolos semua, jika tidak harus cocok dengan field category
+// Mengembalikan filter agar membaca kategori motor/iPhone yang aktif di data array-mu
 motors
-.filter(m => category === "all" || m.category === category)
+.filter(m => m.category === category)
 .forEach(motor => {
 const card = document.createElement("a");
 card.className = "motor-card";
@@ -77,25 +77,24 @@ card.innerHTML = ${motor.new ? '<div class="new-label">New!</div>' : ""} <img sr
 list.appendChild(card);
 });
 }
+// Jalankan kembali render otomatis ke kategori pertama (matic) saat pertama kali web dibuka
+renderMotors("matic");
 // ============================================================
 // NAVIGASI TAB KATEGORI (BERANDA / HOMEPAGE)
 // ============================================================
-document.querySelectorAll(".filter-btn").forEach(tab => {
+document.querySelectorAll(".tab").forEach(tab => {
 tab.addEventListener("click", () => {
-// Hilangkan kelas aktif dari tombol kategori sebelumnya
-document.querySelectorAll(".filter-btn").forEach(t => t.classList.remove("active"));
-// Aktifkan tombol yang baru saja diklik oleh pembeli
+// Menghapus class active dari tombol .tab bawaan HTML awalmu
+document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
 tab.classList.add("active");
-// Render ulang produk berdasarkan atribut data-category di HTML
-renderMotors(tab.getAttribute("data-category"));
+// Mengambil filter berdasarkan dataset category (.tab active)
+renderMotors(tab.dataset.category);
 });
 });
 // ============================================================
-// TEMPLATE INCLUDER & INISIALISASI AWAL WEB
+// TEMPLATE INCLUDER (HEADER, FOOTER, WA)
 // ============================================================
 document.addEventListener("DOMContentLoaded", function () {
-// Jalankan render otomatis pertama kali untuk menampilkan SEMUA produk saat beranda dibuka
-renderMotors("all");
 const includes = document.querySelectorAll("[data-include]");
 includes.forEach(el => {
 const file = el.getAttribute("data-include");
@@ -118,8 +117,7 @@ const dotsContainer = document.querySelector(".dots");
 const mainBannerSlides = slideContainer ? slideContainer.querySelectorAll("img") : [];
 if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
 let slideIndex = 0;
-dotsContainer.innerHTML = ""; // Bersihkan sisa renderan duplikat
-// Bikin indikator dots otomatis sesuai jumlah foto banner promo
+dotsContainer.innerHTML = "";
 mainBannerSlides.forEach((_, i) => {
 let dot = document.createElement("span");
 if (i === 0) dot.className = "active";
@@ -133,16 +131,14 @@ slideContainer.style.transform = translateX(-${i * 100}%);
 mainDots.forEach(d => d.classList.remove("active"));
 if (mainDots[i]) mainDots[i].classList.add("active");
 }
-// Set pergeseran otomatis per 5 detik
 let autoSlideTimer = setInterval(() => {
 slideIndex = (slideIndex + 1) % mainBannerSlides.length;
 showMainSlide(slideIndex);
 }, 5000);
-// Fitur swipe layar sentuh di HP untuk Banner Utama
 let startX = 0;
 slideContainer.addEventListener("touchstart", e => {
 startX = e.touches[0].clientX;
-clearInterval(autoSlideTimer); // Pause sementara waktu saat disentuh pembeli
+clearInterval(autoSlideTimer);
 }, { passive: true });
 slideContainer.addEventListener("touchend", e => {
 let endX = e.changedTouches[0].clientX;
@@ -152,7 +148,6 @@ slideIndex = (slideIndex + 1) % mainBannerSlides.length;
 slideIndex = (slideIndex - 1 + mainBannerSlides.length) % mainBannerSlides.length;
 }
 showMainSlide(slideIndex);
-// Jalankan ulang timer interval pasca swipe selesai
 autoSlideTimer = setInterval(() => {
 slideIndex = (slideIndex + 1) % mainBannerSlides.length;
 showMainSlide(slideIndex);
@@ -168,7 +163,6 @@ const wrapper = document.getElementById('sliderWrapper');
 const dots = document.querySelectorAll('.slider-dots .dot');
 if (wrapper) {
 wrapper.style.transform = translateX(-${index * 100}%);
-// Sinkronisasi status aktif lingkaran titik
 dots.forEach(dot => dot.classList.remove('active'));
 if (dots[index]) {
 dots[index].classList.add('active');
