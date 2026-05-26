@@ -516,4 +516,36 @@ footer small { display: block; margin-top: 50px; text-align: center; color: #555
   
   .buy-now-btn { max-width: 100%; } /* Melebar penuh di HP agar mudah ditap jari */
   }
+
+
+
+.contact-list-box {
+display: flex;
+flex-direction: column;
+gap: 12px;
+font-family: sans-serif;
+text-align: left;
+width: 100%;
+max-width: 400px;
+margin: 15px auto 0 auto; /* Nilai 'auto' di kanan-kiri ini yang otomatis mendorong box ke tengah layar */
+}
+.contact-item {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+.contact-item img {
+width: 16px;
+height: 16px;
+object-fit: contain;
+}
+.contact-item span,
+.contact-item a {
+font-size: 13px;
+color: #ffffff;
+text-decoration: none;
+}
+.contact-item a.admin-link {
+font-weight: bold;
+}
   
