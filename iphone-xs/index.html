@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone XS Second Inter - FlickerCell</title>
+  <link rel="stylesheet" href="../style.css">
+  <div data-include="../header.html"></div>
+</head>
+<body>
+
+  <main class="post-container">
+    <article class="post">
+
+      <div class="image-slider">
+        <div class="slider-wrapper" id="sliderWrapper">
+          <img src="https://i.pinimg.com/736x/a8/58/67/a85867ae9ba63ae170001fb5a97d1c92.jpg" alt="Foto iPhone xr">
+          <img src="https://i.ebayimg.com/images/g/is8AAeSwXXho3b0i/s-l1200.jpg" alt="Foto iPhone xr">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMHQP497D56Tpr9H-o4-7JrtLxDGdEFTW_LUVOg7V_VuXMOMYLanuKqvyw&s=10" alt="Foto iPhone xr">
+        </div>
+        
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+
+      <div class="product-info-header">
+        <p class="product-price">Rp 3.200.000</p>
+        <h1>Iphone XS All Operator</h1>
+      </div>
+<br>
+      
+        <div class="desc-box full-desc">
+          <h3>Deskripsi</h3>
+         <p>Ready Iphone XR Mulus Berkualitas <br> All operator</p>
+        
+          <ul>
+            <li><strong>64GB:</strong> Rp 3.200.00</li>
+            <li><strong>256GB:</strong> Rp 3.700.000</li>
+            <li><strong>512GB:</strong> Rp 4.000.000</li>
+
+
+           <p>- Bebas Reset Bukan Kaleng2 <br>
+- Fisik Mulus<br>
+- Kelengkapan Fullset <br>
+- Fungsi semua normal no minus <br>
+- Garansi unit dan imei 1 bulan <br>
+- Terima Tukar Tambah dengan harga terbaik <br>
+(Garansi tidak termasuk LCD, kesalahan upgrade iOS dan kesalahan penggunaan lainnya)</p>
+
+            <p>SETIAP PEMBELIAN IPHONE DI FLICKERCELL 
+FREE TEMPERED GLASS DAN SOFTCASE</p>
+          </ul>
+          
+          
+          
+        </div>
+      </div>
+
+
+      <div class="buy-action-container">
+  <a href="https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell" onclick="window.open('https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell', '_blank'); return false;" class="buy-now-btn" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important; text-decoration: none;">
+    <i class="fab fa-whatsapp" style="font-size: 20px !important; margin: 0 !important; padding: 0 !important; line-height: 1 !important;"></i>
+    <span style="display: inline-block !important; line-height: 1 !important;">Beli Sekarang via WhatsApp</span>
+  </a>
+      </div>
+      
+    </article>
+  </main>
+
+  <script>
+    function currentSlide(index) {
+      const wrapper = document.getElementById('sliderWrapper');
+      const dots = document.querySelectorAll('.slider-dots .dot');
+      
+      // Geser Gambar
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Ubah Titik Aktif
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  </script>
+
+  <script src="../include.js" defer></script>
+  <script src="../script.js" defer></script>
+ <!-- <div data-include="../wa.html"></div> -->
+  <div data-include="../footer.html"></div>
+</body>
+</html>
