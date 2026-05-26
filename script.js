@@ -2,96 +2,95 @@
 // DAFTAR PRODUK IPHONE (UNTUK BERANDA / HOMEPAGE)
 // ============================================================
 const motors = [
-    {
-  name: "Iphone X Second All Operator",
-  price: "Rp. 2.700.000",
-  sold: "Terjual 70",
-  img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
-  category: "inter",
-  new: false,
-  link: "iphone-x/"
-},
-{
-  name: "Iphone XR Second All Operator",
-  price: "Rp. 3.200.000",
-  sold: "Terjual 90",
-  img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
-  category: "inter",
-  new: false,
-  link: "iphone-xr/"
-},
-{
-  name: "Iphone XS Second All Operator",
-  price: "Rp. 3.200.000",
-  sold: "Terjual 46",
-  img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
-  category: "inter",
-  new: false,
-  link: "iphone-xs/"
-},
-{
-  name: "Iphone XS MAX Second All Operator",
-  price: "Rp. 3.300.000",
-  sold: "Terjual 28",
-  img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
-  category: "inter",
-  new: false,
-  link: "iphone-xs-max/"
-},
-{
-  name: "Iphone 11 Second All Operator",
-  price: "Rp. 3.600.000",
-  sold: "Terjual 67",
-  img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
-  category: "inter",
-  new: false,
-  link: "iphone11/"
-},
-{
-  name: "Iphone 11 PRO Second All Operator",
-  price: "Rp. 4.000.000",
-  sold: "Terjual 63",
-  img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
-  category: "inter",
-  new: false,
-  link: "iphone-11pro/"
-},
-
-    // SECOND IBOX
-    {
-  name: "Iphone 11 Second Ibox",
-  price: "Rp. 5.000.000",
-  sold: "Terjual 63",
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRfNrLkFB-z8marMeLaqHbSdef-yG9npLHOObEYgqtPgGPZmMU7_pIBk&s=10",
-  category: "ibox",
-  new: false,
-  link: "iphone11-ibox/"
-},
-
-// BRAND NEW IN BOX
-    {
-  name: "Iphone 13 New Segel",
-  price: "Rp. 4.000.000",
-  sold: "Terjual 63",
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Au5QjxrydPINJm-ixjXrgzSKqWbcrEtK6s0vmyYQRSWwcSRz0e7dIpEr&s=10",
-  category: "new",
-  new: true,
-  link: "inter/"
-},
-
-// BEA CUKAI
-    {
-  name: "Iphone XR Bea Cukai",
-  price: "Rp. 3.900.000",
-  sold: "Terjual 63",
-  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VJ7hwmP2oaZcVbakOogUGqiNvGdVRrafq9kqBAvC6g&s=10",
-  category: "cukai",
-  new: false,
-  link: "inter/"
-},
-  
+  {
+    name: "Iphone X Second All Operator",
+    price: "Rp. 2.700.000",
+    sold: "Terjual 70",
+    img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
+    category: "inter",
+    new: false,
+    link: "iphone-x/"
+  },
+  {
+    name: "Iphone XR Second All Operator",
+    price: "Rp. 3.200.000",
+    sold: "Terjual 90",
+    img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
+    category: "inter",
+    new: false,
+    link: "iphone-xr/"
+  },
+  {
+    name: "Iphone XS Second All Operator",
+    price: "Rp. 3.200.000",
+    sold: "Terjual 46",
+    img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
+    category: "inter",
+    new: false,
+    link: "iphone-xs/"
+  },
+  {
+    name: "Iphone XS MAX Second All Operator",
+    price: "Rp. 3.300.000",
+    sold: "Terjual 28",
+    img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
+    category: "inter",
+    new: false,
+    link: "iphone-xs-max/"
+  },
+  {
+    name: "Iphone 11 Second All Operator",
+    price: "Rp. 3.600.000",
+    sold: "Terjual 67",
+    img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
+    category: "inter",
+    new: false,
+    link: "iphone11/"
+  },
+  {
+    name: "Iphone 11 PRO Second All Operator",
+    price: "Rp. 4.000.000",
+    sold: "Terjual 63",
+    img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
+    category: "inter",
+    new: false,
+    link: "iphone-11pro/"
+  },
+  // SECOND IBOX
+  {
+    name: "Iphone 11 Second Ibox",
+    price: "Rp. 5.000.000",
+    sold: "Terjual 63",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRfNrLkFB-z8marMeLaqHbSdef-yG9npLHOObEYgqtPgGPZmMU7_pIBk&s=10",
+    category: "ibox",
+    new: false,
+    link: "iphone11-ibox/"
+  },
+  // BRAND NEW IN BOX
+  {
+    name: "Iphone 13 New Segel",
+    price: "Rp. 4.000.000",
+    sold: "Terjual 63",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Au5QjxrydPINJm-ixjXrgzSKqWbcrEtK6s0vmyYQRSWwcSRz0e7dIpEr&s=10",
+    category: "new",
+    new: true,
+    link: "inter/"
+  },
+  // BEA CUKAI
+  {
+    name: "Iphone XR Bea Cukai",
+    price: "Rp. 3.900.000",
+    sold: "Terjual 63",
+    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VJ7hwmP2oaZcVbakOogUGqiNvGdVRrafq9kqBAvC6g&s=10",
+    category: "cukai",
+    new: false,
+    link: "inter/"
+  }
 ];
 
+// ============================================================
+// FUNGSI RENDER PRODUK
+// ============================================================
 function renderMotors(category) {
   const list = document.getElementById("motorList");
   if (!list) return;
@@ -99,9 +98,7 @@ function renderMotors(category) {
 
   motors
     .filter(m => {
-      // Jika kategori yang dipilih adalah "all", tampilkan SEMUA produk tanpa filter
       if (category === "all") return true;
-      // Jika bukan "all", saring ketat sesuai kategorinya (inter atau ibox)
       return m.category === category;
     })
     .forEach(motor => {
@@ -121,25 +118,24 @@ function renderMotors(category) {
     });
 }
 
-// Saat pertama kali web dibuka, jalankan semua produk biar gak kosong
-renderMotors("all");
-
-
 // ============================================================
-// NAVIGASI TAB KATEGORI (BERANDA / HOMEPAGE)
-// ============================================================
-document.querySelectorAll(".tab").forEach(tab => {
-  tab.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
-    tab.classList.add("active");
-    renderMotors(tab.dataset.category);
-  });
-});
-
-// ============================================================
-// TEMPLATE INCLUDER (HEADER, FOOTER, WA)
+// INISIALISASI UTAMAL (MENUNGGU DOM READY)
 // ============================================================
 document.addEventListener("DOMContentLoaded", function () {
+  
+  // 1. Jalankan render pertama kali otomatis sesuai tab yang aktif bawaan HTML ("inter")
+  renderMotors("inter");
+
+  // 2. Hubungkan Fungsi Klik ke Tab HTML yang Menggunakan data-category
+  document.querySelectorAll(".tab").forEach(tab => {
+    tab.addEventListener("click", () => {
+      document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
+      tab.classList.add("active");
+      renderMotors(tab.dataset.category);
+    });
+  });
+
+  // 3. Template Includer (Header, Footer, dll)
   const includes = document.querySelectorAll("[data-include]");
   includes.forEach(el => {
     const file = el.getAttribute("data-include");
@@ -164,9 +160,8 @@ const mainBannerSlides = slideContainer ? slideContainer.querySelectorAll("img")
 
 if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
   let slideIndex = 0;
-  dotsContainer.innerHTML = ""; // Bersihkan sisa renderan duplikat
+  dotsContainer.innerHTML = ""; 
 
-  // Bikin indikator dots otomatis sesuai jumlah foto banner promo
   mainBannerSlides.forEach((_, i) => {
     let dot = document.createElement("span");
     if (i === 0) dot.className = "active";
@@ -183,17 +178,14 @@ if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
     if (mainDots[i]) mainDots[i].classList.add("active");
   }
 
-  // Set pergeseran otomatis per 5 detik
   let autoSlideTimer = setInterval(() => {
     slideIndex = (slideIndex + 1) % mainBannerSlides.length;
     showMainSlide(slideIndex);
   }, 5000);
 
-  // Fitur swipe layar sentuh di HP untuk Banner Utama
-  let startX = 0;
   slideContainer.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
-    clearInterval(autoSlideTimer); // Pause sementara waktu saat disentuh pembeli
+    clearInterval(autoSlideTimer);
   }, { passive: true });
 
   slideContainer.addEventListener("touchend", e => {
@@ -205,7 +197,6 @@ if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
     }
     showMainSlide(slideIndex);
     
-    // Jalankan ulang timer interval pasca swipe selesai
     autoSlideTimer = setInterval(() => {
       slideIndex = (slideIndex + 1) % mainBannerSlides.length;
       showMainSlide(slideIndex);
@@ -224,8 +215,6 @@ function currentSlide(index) {
   
   if (wrapper) {
     wrapper.style.transform = `translateX(-${index * 100}%)`;
-    
-    // Sinkronisasi status aktif lingkaran titik
     dots.forEach(dot => dot.classList.remove('active'));
     if (dots[index]) {
       dots[index].classList.add('active');
@@ -233,7 +222,7 @@ function currentSlide(index) {
   }
 }
 
-// Fitur Swipe Geser Gambar dengan Jari di HP khusus halaman produk iPhone
+// Fitur Swipe Geser Gambar Halaman Produk iPhone
 document.addEventListener("DOMContentLoaded", () => {
   const postWrapper = document.getElementById('sliderWrapper');
   if (postWrapper) {
@@ -250,13 +239,9 @@ document.addEventListener("DOMContentLoaded", () => {
       
       if (postStartX - postEndX > 50) {
         if (postCurrentIndex < totalPostSlides - 1) postCurrentIndex++;
-      } else if (postEndX - postStartX > 50) { // <-- Sudah diganti jadi postStartX
-             if (postCurrentIndex > 0) {
-              postCurrentIndex--;
-  }
+      } else if (postEndX - postStartX > 50) {
+        if (postCurrentIndex > 0) postCurrentIndex--;
       }
-      
-      
       currentSlide(postCurrentIndex);
     });
   }
