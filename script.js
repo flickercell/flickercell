@@ -5,7 +5,7 @@ const motors = [
     {
   name: "Iphone X Second All Operator",
   price: "Rp. 2.700.000",
-  sold: "70",
+  sold: "Terjual 70",
   img: "https://i.ibb.co.com/GwNCJg7/20260526-082236.png",
   category: "matic",
   new: false,
@@ -14,7 +14,7 @@ const motors = [
 {
   name: "Iphone XR Second All Operator",
   price: "Rp. 3.200.000",
-  sold: "90",
+  sold: "Terjual 90",
   img: "https://i.ibb.co.com/VcTHZCt2/20260526-074458.png",
   category: "matic",
   new: false,
@@ -23,7 +23,7 @@ const motors = [
 {
   name: "Iphone XS Second All Operator",
   price: "Rp. 3.200.000",
-  sold: "46",
+  sold: "Terjual 46",
   img: "https://i.ibb.co.com/QF1H7PFv/190262.png",
   category: "matic",
   new: false,
@@ -32,7 +32,7 @@ const motors = [
 {
   name: "Iphone XS MAX Second All Operator",
   price: "Rp. 3.300.000",
-  sold: "28",
+  sold: "Terjual 28",
   img: "https://i.ibb.co.com/6RxCcJ93/190265.png",
   category: "matic",
   new: false,
@@ -41,7 +41,7 @@ const motors = [
 {
   name: "Iphone 11 Second All Operator",
   price: "Rp. 3.600.000",
-  sold: "67",
+  sold: "Terjual 67",
   img: "https://i.ibb.co.com/TDFBw2Qf/190213.png",
   category: "matic",
   new: false,
@@ -50,7 +50,7 @@ const motors = [
 {
   name: "Iphone 11 PRO Second All Operator",
   price: "Rp. 4.000.000",
-  sold: "63",
+  sold: "Terjual 63",
   img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
   category: "matic",
   new: false,
