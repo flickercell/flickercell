@@ -190,7 +190,7 @@ header a img:hover, footer a img:hover {
    HALAMAN DETIL POSTINGAN (KHUSUS PRODUK / IPHONE)
 ============================================================ */
 .post-container {
-  max-width: 1000px;
+  max-width: 600px;
   margin: 20px auto;
   padding: 0 15px;
 }
