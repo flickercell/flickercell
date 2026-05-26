@@ -119,14 +119,14 @@ function renderMotors(category) {
 }
 
 // ============================================================
-// INISIALISASI UTAMAL (MENUNGGU DOM READY)
+// LOGIKA INTI SELEPAS DOM READY
 // ============================================================
 document.addEventListener("DOMContentLoaded", function () {
   
-  // 1. Jalankan render pertama kali otomatis sesuai tab yang aktif bawaan HTML ("inter")
+  // Tampilkan tab aktif pertama bawaan kamu ("inter")
   renderMotors("inter");
 
-  // 2. Hubungkan Fungsi Klik ke Tab HTML yang Menggunakan data-category
+  // Aktifkan fungsi klik pada tab HTML
   document.querySelectorAll(".tab").forEach(tab => {
     tab.addEventListener("click", () => {
       document.querySelectorAll(".tab").forEach(t => t.classList.remove("active"));
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // 3. Template Includer (Header, Footer, dll)
+  // Template Includer HTML
   const includes = document.querySelectorAll("[data-include]");
   includes.forEach(el => {
     const file = el.getAttribute("data-include");
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // ============================================================
-// BANNER AUTO-SLIDER (KHUSUS BERANDA / HOMEPAGE)
+// BANNER AUTO-SLIDER (DENGAN FIX VARIABEL ERROR)
 // ============================================================
 const slideContainer = document.querySelector(".slides");
 const dotsContainer = document.querySelector(".dots");
@@ -183,6 +183,9 @@ if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
     showMainSlide(slideIndex);
   }, 5000);
 
+  // Perbaikan deklarasi let di sini agar tidak memicu Uncaught ReferenceError
+  let startX = 0; 
+  
   slideContainer.addEventListener("touchstart", e => {
     startX = e.touches[0].clientX;
     clearInterval(autoSlideTimer);
@@ -207,7 +210,7 @@ if (slideContainer && dotsContainer && mainBannerSlides.length > 0) {
 }
 
 // ============================================================
-// FUNGSI KLIK TITIK SLIDER (KHUSUS HALAMAN POSTINGAN PRODUK)
+// FUNGSI TITIK SLIDER PRODUK
 // ============================================================
 function currentSlide(index) {
   const wrapper = document.getElementById('sliderWrapper');
@@ -222,7 +225,7 @@ function currentSlide(index) {
   }
 }
 
-// Fitur Swipe Geser Gambar Halaman Produk iPhone
+// Swipe post produk
 document.addEventListener("DOMContentLoaded", () => {
   const postWrapper = document.getElementById('sliderWrapper');
   if (postWrapper) {
