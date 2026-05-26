@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone XS Max Second Inter - FlickerCell</title>
+  <link rel="stylesheet" href="../style.css">
+  <div data-include="../header.html"></div>
+</head>
+<body>
+
+  <main class="post-container">
+    <article class="post">
+
+      <div class="image-slider">
+        <div class="slider-wrapper" id="sliderWrapper">
+          <img src="https://cellularsavings.ca/cdn/shop/products/xsmax_176b239a-9aa4-414f-ac6f-c231749b10a3_480x480.jpg?v=1620688011" alt="Foto iPhone xs max">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdL-gpsAlAIWQ6_eTOS7oPiZcEzFN_bsztNjOoc8Ew6dYC1aplNyEWxw4&s=10" alt="Foto iPhone xs max">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBuEqI-cjoPhddhbB_JVuhe5ozGOduxu1MGYpsML6RTHvelms0LlWFmo6r&s=10" alt="Foto iPhone xs max">
+        </div>
+        
+        <div class="slider-dots">
+          <span class="dot active" onclick="currentSlide(0)"></span>
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+      </div>
+
+      <div class="product-info-header">
+        <p class="product-price">Rp 3.300.000</p>
+        <h1>Iphone XS Max All Operator</h1>
+      </div>
+<br>
+      
+        <div class="desc-box full-desc">
+          <h3>Deskripsi</h3>
+         <p>Ready Iphone XR Mulus Berkualitas <br> All operator</p>
+        
+          <ul>
+            <li><strong>64GB:</strong> Rp 3.300.00</li>
+            <li><strong>256GB:</strong> Rp 3.800.000</li>
+            <li><strong>512GB:</strong> Rp 4.100.000</li>
+
+
+           <p>- Bebas Reset Bukan Kaleng2 <br>
+- Fisik Mulus<br>
+- Kelengkapan Fullset <br>
+- Fungsi semua normal no minus <br>
+- Garansi unit dan imei 1 bulan <br>
+- Terima Tukar Tambah dengan harga terbaik <br>
+(Garansi tidak termasuk LCD, kesalahan upgrade iOS dan kesalahan penggunaan lainnya)</p>
+
+            <p>SETIAP PEMBELIAN IPHONE DI FLICKERCELL 
+FREE TEMPERED GLASS DAN SOFTCASE</p>
+          </ul>
+          
+          
+          
+        </div>
+      </div>
+
+
+      <div class="buy-action-container">
+  <a href="https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell" onclick="window.open('https://wa.me/6287722124495?text=Hallo%20Min%20Flickercell', '_blank'); return false;" class="buy-now-btn" style="display: inline-flex !important; align-items: center !important; justify-content: center !important; gap: 8px !important; text-decoration: none;">
+    <i class="fab fa-whatsapp" style="font-size: 20px !important; margin: 0 !important; padding: 0 !important; line-height: 1 !important;"></i>
+    <span style="display: inline-block !important; line-height: 1 !important;">Beli Sekarang via WhatsApp</span>
+  </a>
+      </div>
+      
+    </article>
+  </main>
+
+  <script>
+    function currentSlide(index) {
+      const wrapper = document.getElementById('sliderWrapper');
+      const dots = document.querySelectorAll('.slider-dots .dot');
+      
+      // Geser Gambar
+      wrapper.style.transform = `translateX(-${index * 100}%)`;
+      
+      // Ubah Titik Aktif
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+    }
+  </script>
+
+  <script src="../include.js" defer></script>
+  <script src="../script.js" defer></script>
+ <!-- <div data-include="../wa.html"></div> -->
+  <div data-include="../footer.html"></div>
+</body>
+</html>
