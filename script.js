@@ -54,6 +54,39 @@ const motors = [
   img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
   category: "inter",
   new: false,
+  link: "iphone-11pro/"
+},
+
+    // SECOND IBOX
+    {
+  name: "Iphone 11 Second Ibox",
+  price: "Rp. 5.000.000",
+  sold: "Terjual 63",
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtRfNrLkFB-z8marMeLaqHbSdef-yG9npLHOObEYgqtPgGPZmMU7_pIBk&s=10",
+  category: "ibox",
+  new: false,
+  link: "iphone11-ibox/"
+},
+
+// BRAND NEW IN BOX
+    {
+  name: "Iphone 13 New Segel",
+  price: "Rp. 4.000.000",
+  sold: "Terjual 63",
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3Au5QjxrydPINJm-ixjXrgzSKqWbcrEtK6s0vmyYQRSWwcSRz0e7dIpEr&s=10",
+  category: "new",
+  new: true,
+  link: "inter/"
+},
+
+// BEA CUKAI
+    {
+  name: "Iphone XR Bea Cukai",
+  price: "Rp. 3.900.000",
+  sold: "Terjual 63",
+  img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0VJ7hwmP2oaZcVbakOogUGqiNvGdVRrafq9kqBAvC6g&s=10",
+  category: "cukai",
+  new: false,
   link: "inter/"
 },
   
