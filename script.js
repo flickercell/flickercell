@@ -52,7 +52,7 @@ const motors = [
   price: "Rp. 4.000.000",
   sold: "Terjual 63",
   img: "https://i.ibb.co.com/ynX0fF46/20260526-084145.png",
-  category: "matic",
+  category: "sport",
   new: false,
   link: "iphone/"
 },
